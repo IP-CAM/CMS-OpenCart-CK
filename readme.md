@@ -1,41 +1,42 @@
-#  CloudKassir модуль для OpenCart
+# CloudKassir Module for OpenCart
 
-Модуль позволяет интегрировать онлайн-кассу [CloudKassir](https://cloudkassir.ru/) в интернет-магазин на платформе OpenCart.
+The module allows you to integrate the online cashier [CloudKassir] (https://cloudkassir.ru/) to the online store on the OpenCart platform.
 
-### Возможности
-* Автоматическая отправка чеков прихода;  
-* Отправка чеков возврата прихода;  
-* Отдельная настройка НДС для служб доставки;  
-* Отправка чеков на email клиента;  
-* Отправка чеков в SMS;  
+### Opportunities
+* Automatic sending arrival checks;
+* Sending arrival check checks;
+* Separate VAT setting for delivery services;
+* Sending checks to the email client;
+* Sending checks in SMS;
 
-### Совместимость
-* OpenCart v.3.0 и выше;
-### Установка через панель управления
+### compatibility
+* OpenCart v.3.0 and above;
+### Installation through the control panel
 
-В панели адмниистратора зайти в раздел "Модули/Расширения" -> "Установка расширений" и загрузить архив.
+In the Administrator panel, go to the "Modules / Extensions" section -> "Install Extensions" and upload an archive.
 
-### Ручная установка
+### Manual Installation
 
-Распаковать из архива каталог upload и загрузить в корень OpenCart.
+Unpack from the archive Upload directory and download to the root of OpenCart.
 
-### Настройка модуля
+### Setting up module
 
-1. Перейти в настройки модуля "Модули/Расширения" -> "Модули/Расширения" -> "Модули".
-Выбрать CloudKassir и активировать модуль.
-2. Зайти в настройки модуля и указать:
-    * Идентификатор сайта — Public id сайта из личного кабинета CloudPayments
-    * Секретный ключ — API Secret из личного кабинета CloudPayments
-    * ИНН — ИНН организации, на которую зарегистрирована онлайн-касса
-    * Статус - включено
-    * Ставка НДС — Указание ставки НДС.
-        Все возможные значения указаны в документации https://cloudpayments.ru/Docs/Kassa#data-format
-    * Ставка НДС для доставки — Указание отдельной ставки НДС для доставки.
-        Если доставка платная, то она в чеке оформляется отдельной строкой со своей ставкой НДС.
-        Значения аналогично ставке НДС для товаров.
-    * Система налогообложения — Тип системы налогообложения.
-        Возможные значения перечислены в документации CloudPayments https://cloudpayments.ru/Docs/Directory#taxation-system    
-    * Статусы заказа для оплаты — Выбор статусов заказа, при перевозе на который отправляется запрос на генерация онлайн-чека прихода. По умолчанию "Ожидание"
-    * Статусы заказа для возврата — Выбор статусов заказа, при перевозе на который отправляется запрос на генерация онлайн-чека возврата. По умолчанию "Отмена и анулирование"
+1. Go to the "Modules / Expansion" module settings -> "Modules / Extensions" -> "Modules".
+Select CloudKassir and activate the module.
+2. Go to the module settings and specify:
+    * Site Identifier - Public Website ID from Personal Cabinet CloudPayments
+    * Secret key - SECRET API from Personal Cabinet CloudPayments
+    * INN INN of the Organization to which online cash register
+    * Status - Included
+    * VAT rate - indication of VAT rates.
+        All possible values ​​are indicated in the documentation https://cloudpayments.ru/docs/Kassa#Data-Format
+    * VAT rate for delivery - specifying a separate VAT rate for delivery.
+        If shipping is paid, then it is drawn up in the check with a separate line with its VAT rate.
+        Values ​​are similar to VAT rate for goods.
+    * Taxation system - type of taxation system.
+        Possible values ​​are listed in the documentation CloudPayments https://cloudpayments.ru/docs/directory#Taxation-System
+    * Payment statuses for payment - Choosing an order status, with transportation to which a request for generating an online arrival check is sent. Default "Waiting"
+    * Reference order statuses - Choosing an order status, with a transport of which is sent to generate an online return check. By default, "Cancel and Anulating"
 
-    Затем сохранить введенные параметры.
+    Then save the entered parameters.
+    
